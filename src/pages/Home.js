@@ -32,20 +32,29 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="Axel">
-            <div className="Axel_content">
-              <h2> I'm Axel Valentin</h2>
-              <p>I'm a full stack web developer.</p>
+          <div className="d-flex justify-content-center">
+            <div className="">
+              <h2 className="text-color text-center"> I'm Axel Valentin</h2>
+              <p className="text-color text-center">
+                I'm a full stack web developer.
+              </p>
             </div>
 
-            <div>
-              <img src={me} alt="me" className="Axel_image" />
+            <div className="d-flex pl-5">
+              <img
+                className="border border-light border-4 rounded-circle pl-5"
+                src={me}
+                alt="Valentin-axel-profile"
+                width="100px"
+                height="100px"
+              />
             </div>
           </div>
 
-          <section className="about_me">
-            <div className="about_me_content">
-              <h3>About me</h3>
+          {/* about me section */}
+          <section className="">
+            <div className="">
+              <h3 className="text-decoration-underline">About me</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam
