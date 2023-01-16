@@ -1,6 +1,5 @@
 .primary-background-color {
   background-color: var(--light-mode-color);
-  padding-top: 5%;
 }
 
 .text-color {
@@ -20,56 +19,6 @@
   border-radius: 5px;
 }
 
-/* about me section*/
-
-.about_me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5rem;
-  margin: 0;
-}
-
-.about_me_content h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--light-mode-text);
-  text-align: left;
-  margin-bottom: 0.5rem;
-}
-
-.about_me_content p {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--light-mode-text);
-  text-align: left;
-  margin-bottom: 0.5rem;
-}
-
-/* passion section*/
-
-.my_passion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5rem;
-  margin: 0;
-}
-
-.my_passion_content h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--light-mode-text);
-  text-align: left;
-  margin-bottom: 0.5rem;
-}
-
-.my_passion_content p {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--light-mode-text);
-  text-align: left;
-  margin-bottom: 0.5rem;
+.max-width-section {
+  max-width: 400px;
 }

@@ -7,8 +7,8 @@ import { Navbar, Nav } from "react-bootstrap";
 import "../styles/components/Navbar.css";
 
 //import cat icons
-import cat_icon from "../assets/icons/cat-svgrepo-com.svg";
-import github_icon from "../assets/icons/github-svgrepo-com.svg";
+import cat_icon from "../assets/icons/cat-icon.svg";
+import github_icon from "../assets/icons/github-icon.svg";
 
 const MyNavbar = () => {
   return (
