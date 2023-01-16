@@ -108,6 +108,7 @@ const Home = () => {
             </div>
           </section>
 
+          {/* my passion section */}
           <section id="my-passion" className="max-width-section">
             <div className="pt-3 d-flex flex-column">
               <h3 className="text-decoration-underline">My passion</h3>

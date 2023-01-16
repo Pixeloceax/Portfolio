@@ -6,6 +6,10 @@
   color: var(--light-mode-text);
 }
 
+.max-width-section {
+  max-width: 400px;
+}
+
 /* glass effect*/
 
 .glass_effect_home {
@@ -17,8 +21,4 @@
   padding-left: 4%;
   padding-right: 4%;
   border-radius: 5px;
-}
-
-.max-width-section {
-  max-width: 400px;
 }
