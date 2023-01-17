@@ -12,18 +12,18 @@
 Welcome to my portfolio! Here you will find a collection of my past projects and experiences. I am excited to share my skills and knowledge with you, and I look forward to connecting with you. Please feel free to contact me if you have any questions or would like to collaborate on a project.
 
 <p align="center">
-    <img src="/home/vagrant/website/src/assets/images/me.jpg" alt="axel-valentin" height="auto" width="auto" style="border-radius:50%; border: solid; color:white;">
+    <img src="src/assets/images/me.jpg" alt="axel-valentin" height="auto" width="auto" style="border-radius:50%; border: solid; color:white;">
 </p>
 
 # Tools I used for my portfolio
 
-<img src="/home/vagrant/website/src/assets/icons/html-5.svg" alt="html" width="20%" style="padding-left:1%;">
+<img src="src/assets/icons/html-5.svg" alt="html" width="20%" style="padding-left:1%;">
 <img src="src/assets/icons/css-3.svg" alt="css" width="20%" style="padding-left:3%;">
 <img src="src/assets/icons/javascript.svg" alt="JavaScript" width="22.7%" style="padding-left:4%;">
 <br/>
 <br/>
 <img src="src/assets/icons/react.svg" alt="react" width="22%">
-<img src="/home/vagrant/website/src/assets/icons/bootstrap.svg" alt="bootstrap" width="25%">
+<img src="src/assets/icons/bootstrap.svg" alt="bootstrap" width="25%">
 <img src="src/assets/icons/vscode.svg" alt="vscode" width="20%">
 
 <br/>
