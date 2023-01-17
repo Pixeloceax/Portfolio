@@ -13,11 +13,11 @@ import github_icon from "../assets/icons/github-icon.svg";
 const MyNavbar = () => {
   return (
     <>
-      <Navbar expand="lg" fixed="top" className="sticky-navbar glass_effect ">
+      <Navbar expand="lg" fixed="top" className="sticky-navbar glass_effect">
         <Navbar.Brand href="/home">
-          <p className="home__text">
+          <p className="d-flex home-link-text m-0 text-color">
             {" "}
-            <img src={cat_icon} alt="cat_icon" className="cat_icon" />
+            <img src={cat_icon} alt="cat-icon" width="24px" />
             Axel Valentin
           </p>
         </Navbar.Brand>
@@ -25,19 +25,15 @@ const MyNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="text-center">
             <Nav.Link href="/project">
-              <p className="project_text">Project</p>
+              <p className="link-text m-0 text-color">Project</p>
             </Nav.Link>
             <Nav.Link href="/contact">
               {" "}
-              <p className="contact_text"> Contact</p>
+              <p className="link-text m-0 text-color"> Contact</p>
             </Nav.Link>
             <Nav.Link href="https://github.com/Pixeloceax">
-              <p className="github_link">
-                <img
-                  src={github_icon}
-                  alt="github_logo"
-                  className="github_logo"
-                />
+              <p className="link-text text-color m-0 d-flex">
+                <img src={github_icon} alt="github-logo" width="16px" />
                 Github
               </p>
             </Nav.Link>

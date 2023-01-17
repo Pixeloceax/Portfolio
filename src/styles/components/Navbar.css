@@ -1,3 +1,7 @@
+.primary-background-color {
+  background-color: var(--light-mode-color);
+}
+
 .glass_effect {
   background: rgba(255, 255, 255, 0.57);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -8,42 +12,16 @@
   padding-right: 4%;
 }
 
-.home__text {
+.text-color {
+  color: var(--light-mode-text);
+}
+
+.home-link-text {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--light-mode-text);
-  margin: 0;
-  display: flex;
 }
 
-.cat_icon {
-  width: 1.5rem;
-}
-
-.project_text {
+.link-text {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--light-mode-text);
-  margin: 0;
-}
-
-.contact_text {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--light-mode-text);
-  margin: 0;
-}
-
-.github_link {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--light-mode-text);
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.github_logo {
-  width: 1rem;
-  display: flex;
 }
