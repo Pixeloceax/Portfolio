@@ -1,8 +1,8 @@
 # WARNING:
 
-## **This project is no finish.**
+## **This project is not finished.**
 
-    bug can be found and.
+    bug can be found.
 
 <br/>
 <br/>
@@ -11,11 +11,13 @@
 
 Welcome to my portfolio! Here you will find a collection of my past projects and experiences. I am excited to share my skills and knowledge with you, and I look forward to connecting with you. Please feel free to contact me if you have any questions or would like to collaborate on a project.
 
-<p align="center">
-    <img src="src/assets/images/me.jpg" alt="axel-valentin" height="auto" width="auto" style="border-radius:50%; border: solid; color:white;">
-</p>
+<br/>
+<br/>
 
 # Tools I used for my portfolio
+
+<br/>
+<br/>
 
 <div align="center">
   <img style="margin: 10px" src="src/assets/icons/html-5.svg" alt="html" height="50" />
