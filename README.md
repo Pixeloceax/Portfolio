@@ -17,14 +17,14 @@ Welcome to my portfolio! Here you will find a collection of my past projects and
 
 # Tools I used for my portfolio
 
-<img src="src/assets/icons/html-5.svg" alt="html" width="20%" style="padding-left:1%;">
-<img src="src/assets/icons/css-3.svg" alt="css" width="20%" style="padding-left:3%;">
-<img src="src/assets/icons/javascript.svg" alt="JavaScript" width="22.7%" style="padding-left:4%;">
-<br/>
-<br/>
-<img src="src/assets/icons/react.svg" alt="react" width="22%">
-<img src="src/assets/icons/bootstrap.svg" alt="bootstrap" width="25%">
-<img src="src/assets/icons/vscode.svg" alt="vscode" width="20%">
+<div align="center">
+  <img style="margin: 10px" src="src/assets/icons/html-5.svg" alt="html" height="50" />
+    <img style="margin: 10px" src="src/assets/icons/css-3.svg" alt="css" height="50" />
+    <img style="margin: 10px" src="src/assets/icons/javascript.svg" alt="javascript" height="50" />
+    <img style="margin: 10px" src="src/assets/icons/react.svg" alt="react" height="50" />
+    <img style="margin: 10px" src="src/assets/icons/bootstrap.svg" alt="bootstrap" height="50" />
+    <img style="margin: 10px" src="src/assets/icons/vscode.svg" alt="vscode" height="50" />
+</div>
 
 <br/>
 <br/>
