@@ -32,7 +32,7 @@ const MyNavbar = () => {
               <p className="link-text m-0 text-color"> Contact</p>
             </Nav.Link>
             <Nav.Link href="https://github.com/Pixeloceax">
-              <p className="link-text text-color m-0 ">
+              <p className="link-text text-color m-0 pl-5">
                 <img src={github_icon} alt="github-logo" width="16px" />
                 Github
               </p>

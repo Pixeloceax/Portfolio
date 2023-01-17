@@ -36,8 +36,8 @@ const Home = () => {
               I'm a Student at Holberton School, I'm learning to be a Full-Stack
               Dev
             </p>
-            <div className="m-0 p-0 d-flex justify-content-center w-50">
-              <img className="w-50" src={hbtn} alt="Hbtn-school-logo" />
+            <div className="m-0 p-0 py-4 d-flex justify-content-center w-50">
+              <img className="w-75" src={hbtn} alt="Hbtn-school-logo" />
             </div>
           </div>
         </section>
