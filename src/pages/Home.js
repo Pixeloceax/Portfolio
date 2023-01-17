@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/Home.css";
+import "../styles/pages/Home.css";
 
 // import images
 import me from "../assets/images/me.jpg";
