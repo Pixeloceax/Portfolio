@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# WARNING:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **This project is no finish.**
 
-## Available Scripts
+    bug can be found and.
 
-In the project directory, you can run:
+<br/>
+<br/>
 
-### `npm start`
+# Hi, I'm Axel Valentin! 👋
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Welcome to my portfolio! Here you will find a collection of my past projects and experiences. I am excited to share my skills and knowledge with you, and I look forward to connecting with you. Please feel free to contact me if you have any questions or would like to collaborate on a project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+    <img src="/home/vagrant/website/src/assets/images/me.jpg" alt="axel-valentin" height="auto" width="auto" style="border-radius:50%; border: solid; color:white;">
+</p>
 
-### `npm test`
+# Tools I used for my portfolio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="/home/vagrant/website/src/assets/icons/html-5.svg" alt="html" width="20%" style="padding-left:1%;">
+<img src="src/assets/icons/css-3.svg" alt="css" width="20%" style="padding-left:3%;">
+<img src="src/assets/icons/javascript.svg" alt="JavaScript" width="22.7%" style="padding-left:4%;">
+<br/>
+<br/>
+<img src="src/assets/icons/react.svg" alt="react" width="22%">
+<img src="/home/vagrant/website/src/assets/icons/bootstrap.svg" alt="bootstrap" width="25%">
+<img src="src/assets/icons/vscode.svg" alt="vscode" width="20%">
 
-### `npm run build`
+<br/>
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+<img src="src/assets/icons/netlify.svg" alt="netlify">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+in the public folder create a "_redirects" file with the content  "/* /index.html 200"
 
-### `npm run eject`
+on Netlify
+deployment option:
+ - Build command : npm run build
+ - Publish directory : /build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+</p>
+<br/>
+<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Clone the repository (SSH)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```console
+vagrant@ubuntu-focal:~$ git clone git@github.com:Pixeloceax/Portfolio.git
+```
 
-## Learn More
+### Clone the repository (HTTPS)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```console
+vagrant@ubuntu-focal:~$ git clone https://github.com/Pixeloceax/Portfolio.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Install the dependencies
 
-### Code Splitting
+```console
+vagrant@ubuntu-focal:~$ npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Run the project
 
-### Analyzing the Bundle Size
+```console
+vagrant@ubuntu-focal:~$ npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br/>
+<br/>
 
-### Making a Progressive Web App
+# Contact me
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+    <a href="https://www.linkedin.com/in/axel-valentin-5616bb221/" target="_blank">
+        <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+    </a>
+    <a href="https://github.com/Pixeloceax" target="_blank">
+        <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+    </a>
+    <a href="mailto:axel.valentinbvs@yahoo.com" target="_blank">
+        <img src=https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white alt=Mail style="margin-bottom: 5px;" />
+    </a>
+</div>
