@@ -138,15 +138,16 @@ const Project = () => {
             <h1 className="text-color text-center mb-3 fw-bold">My Projects</h1>
           </div>
 
-          <div class="container my-5 ">
-            <div class="row">
-              <div class="col">
+          <div class="container my-5">
+            <div class="row ">
+              {/* Smiling School */}
+              <div class="col d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>Smilling School</Card.Title>
+                    <Card.Title>Smiling School</Card.Title>
                     <Card.Text>
                       implementation from scratch of a school website with Html
                       Css and Bootstrap
@@ -165,23 +166,26 @@ const Project = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col">
+
+              {/* Web front end */}
+              <div class="col d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>Smilling School</Card.Title>
+                    <Card.Title>Web front end</Card.Title>
                     <Card.Text>
-                      implementation from scratch of a school website with Html
-                      Css and Bootstrap
+                      front-end exercise, overview of the tech learned for the
+                      front
                     </Card.Text>
+                    <br />
                     <Button variant="dark">
                       {" "}
                       <a
                         className="text-white text-decoration-none"
                         rel="github-repo"
-                        href="https://github.com/Pixeloceax/holbertonschool-smiling-school"
+                        href="https://github.com/Pixeloceax/holbertonschool-web_front_end"
                       >
                         {" "}
                         Github
@@ -190,23 +194,24 @@ const Project = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col">
+
+              {/* fun with css */}
+              <div class="col d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>Smilling School</Card.Title>
-                    <Card.Text>
-                      implementation from scratch of a school website with Html
-                      Css and Bootstrap
-                    </Card.Text>
+                    <Card.Title>Fun with CSS</Card.Title>
+                    <Card.Text>more difficult exercise to learn css</Card.Text>
+                    <br />
+                    <br />
                     <Button variant="dark">
                       {" "}
                       <a
                         className="text-white text-decoration-none"
                         rel="github-repo"
-                        href="https://github.com/Pixeloceax/holbertonschool-smiling-school"
+                        href="https://github.com/Pixeloceax/holbertonschool-Fun-with-CSS"
                       >
                         {" "}
                         Github
@@ -215,23 +220,25 @@ const Project = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col">
+
+              {/* headphone school */}
+              <div class="col d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>Smilling School</Card.Title>
+                    <Card.Title>Headphone school</Card.Title>
                     <Card.Text>
                       implementation from scratch of a school website with Html
-                      Css and Bootstrap
+                      and Css only
                     </Card.Text>
                     <Button variant="dark">
                       {" "}
                       <a
                         className="text-white text-decoration-none"
                         rel="github-repo"
-                        href="https://github.com/Pixeloceax/holbertonschool-smiling-school"
+                        href="https://github.com/Pixeloceax/holbertonschool-headphones"
                       >
                         {" "}
                         Github
@@ -245,23 +252,23 @@ const Project = () => {
 
           <div class="container mb-5">
             <div class="row">
-              <div class="col">
+              {/* comment */}
+              <div class="col d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>Smilling School</Card.Title>
-                    <Card.Text>
-                      implementation from scratch of a school website with Html
-                      Css and Bootstrap
-                    </Card.Text>
+                    <Card.Title>future project</Card.Title>
+                    <Card.Text>coming soon</Card.Text>
+                    <br />
+                    <br />
                     <Button variant="dark">
                       {" "}
                       <a
                         className="text-white text-decoration-none"
                         rel="github-repo"
-                        href="https://github.com/Pixeloceax/holbertonschool-smiling-school"
+                        href="github.com/Pixeloceax/"
                       >
                         {" "}
                         Github
@@ -270,23 +277,23 @@ const Project = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col">
+              {/* comment */}
+              <div class="col d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>Smilling School</Card.Title>
-                    <Card.Text>
-                      implementation from scratch of a school website with Html
-                      Css and Bootstrap
-                    </Card.Text>
+                    <Card.Title>future project</Card.Title>
+                    <Card.Text>coming soon</Card.Text>
+                    <br />
+                    <br />
                     <Button variant="dark">
                       {" "}
                       <a
                         className="text-white text-decoration-none"
                         rel="github-repo"
-                        href="https://github.com/Pixeloceax/holbertonschool-smiling-school"
+                        href="github.com/Pixeloceax/"
                       >
                         {" "}
                         Github
@@ -295,23 +302,23 @@ const Project = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col">
+              {/* comment */}
+              <div class="col d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>Smilling School</Card.Title>
-                    <Card.Text>
-                      implementation from scratch of a school website with Html
-                      Css and Bootstrap
-                    </Card.Text>
+                    <Card.Title>future project</Card.Title>
+                    <Card.Text>coming soon</Card.Text>
+                    <br />
+                    <br />
                     <Button variant="dark">
                       {" "}
                       <a
                         className="text-white text-decoration-none"
                         rel="github-repo"
-                        href="https://github.com/Pixeloceax/holbertonschool-smiling-school"
+                        href="github.com/Pixeloceax/"
                       >
                         {" "}
                         Github
@@ -320,23 +327,23 @@ const Project = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col">
+              {/* comment */}
+              <div class="col d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>Smilling School</Card.Title>
-                    <Card.Text>
-                      implementation from scratch of a school website with Html
-                      Css and Bootstrap
-                    </Card.Text>
+                    <Card.Title>future project</Card.Title>
+                    <Card.Text>coming soon</Card.Text>
+                    <br />
+                    <br />
                     <Button variant="dark">
                       {" "}
                       <a
                         className="text-white text-decoration-none"
                         rel="github-repo"
-                        href="https://github.com/Pixeloceax/holbertonschool-smiling-school"
+                        href="github.com/Pixeloceax/"
                       >
                         {" "}
                         Github
