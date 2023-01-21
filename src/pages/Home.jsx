@@ -15,16 +15,18 @@ import newtech from "../assets/icons/new-tech-icon.svg";
 const Home = () => {
   //age auto update
   const date = new Date();
+  const currentYear = date.getFullYear();
+  const birthYear = 2003;
+  const birthMonth = 5;
+  const birthDay = 4;
+  const age =
+    currentYear -
+    birthYear -
+    (date.getMonth() + 1 < birthMonth ||
+    (date.getMonth() + 1 === birthMonth && date.getDate() < birthDay)
+      ? 1
+      : 0);
 
-  let day = date.getDate();
-  let month = date.getMonth() + 1;
-  let year = date.getFullYear();
-
-  let age = year - 2003 - 1;
-
-  if (day === 4 && month === 5) {
-    age += 1;
-  }
   return (
     <>
       <main className="primary-background-color w-100 h-100 d-flex flex-column align-items-center">

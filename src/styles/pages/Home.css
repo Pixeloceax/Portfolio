@@ -1,11 +1,3 @@
-.primary-background-color {
-  background-color: var(--light-mode-color);
-}
-
-.text-color {
-  color: var(--light-mode-text);
-}
-
 .max-width-section {
   max-width: 400px;
 }
