@@ -13,7 +13,7 @@ import github_icon from "../assets/icons/github-icon.svg";
 const MyNavbar = () => {
   return (
     <>
-      <Navbar expand="lg" fixed="top" className="sticky-navbar glass_effect">
+      <Navbar expand="lg" sticky="top" className=" glass_effect">
         <Navbar.Brand href="/home">
           <p className="d-flex home-link-text m-0 text-color">
             {" "}
