@@ -6,6 +6,9 @@ import "../styles/pages/Project.css";
 // import bootstrap components
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 
 // import icons
 import html from "../assets/icons/html-5.svg";
@@ -54,14 +57,13 @@ const Project = () => {
       <main className="primary-background-color w-100 h-100 d-flex flex-column align-items-center">
         {/* skills section  */}
         <section id="Skills">
-          <div className="d-flex flex-column align-items-center m-0 mt-5 pt-5">
+          <div className="d-flex flex-column align-items-center m-0 pt-5">
             <h1 className="text-color text-center mb-3 fw-bold">My Skills</h1>
           </div>
 
-          <div class="container">
-            <div class="row">
-              {/* language */}
-              <div class="col-sm">
+          <Container>
+            <Row>
+              <Col sm>
                 <div>
                   {language.map((image, index) => (
                     <div className="glass-effect-skill p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
@@ -76,9 +78,8 @@ const Project = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-              {/* framework */}
-              <div class="col-sm">
+              </Col>
+              <Col sm>
                 <div>
                   {framework.map((image, index) => (
                     <div className="glass-effect-skill p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
@@ -93,9 +94,8 @@ const Project = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-              {/* database */}
-              <div class="col-sm">
+              </Col>
+              <Col sm>
                 <div>
                   {database.map((image, index) => (
                     <div className="glass-effect-skill p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
@@ -110,9 +110,8 @@ const Project = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-              {/* tools */}
-              <div class="col-sm">
+              </Col>
+              <Col sm>
                 <div>
                   {tools.map((image, index) => (
                     <div className="glass-effect-skill p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
@@ -127,9 +126,9 @@ const Project = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
         </section>
 
         {/* project section */}
@@ -138,10 +137,11 @@ const Project = () => {
             <h1 className="text-color text-center mb-3 fw-bold">My Projects</h1>
           </div>
 
-          <div class="container my-5">
-            <div class="row ">
+          <Container className="my-5">
+            <Row>
               {/* Smiling School */}
-              <div class="col d-flex justify-content-center pb-3">
+              <Col sm className="d-flex justify-content-center pb-3">
+                {" "}
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
@@ -165,10 +165,10 @@ const Project = () => {
                     </Button>
                   </Card.Body>
                 </Card>
-              </div>
+              </Col>
 
               {/* Web front end */}
-              <div class="col d-flex justify-content-center pb-3">
+              <Col sm className="d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
@@ -193,10 +193,10 @@ const Project = () => {
                     </Button>
                   </Card.Body>
                 </Card>
-              </div>
+              </Col>
 
               {/* fun with css */}
-              <div class="col d-flex justify-content-center pb-3">
+              <Col sm className="d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
@@ -219,10 +219,10 @@ const Project = () => {
                     </Button>
                   </Card.Body>
                 </Card>
-              </div>
+              </Col>
 
               {/* headphone school */}
-              <div class="col d-flex justify-content-center pb-3">
+              <Col sm className="d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
@@ -246,14 +246,14 @@ const Project = () => {
                     </Button>
                   </Card.Body>
                 </Card>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
 
-          <div class="container mb-5">
-            <div class="row">
+          <Container className="mb-5">
+            <Row>
               {/* comment */}
-              <div class="col d-flex justify-content-center pb-3">
+              <Col className="d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
@@ -276,9 +276,9 @@ const Project = () => {
                     </Button>
                   </Card.Body>
                 </Card>
-              </div>
+              </Col>
               {/* comment */}
-              <div class="col d-flex justify-content-center pb-3">
+              <Col className="d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
@@ -301,9 +301,9 @@ const Project = () => {
                     </Button>
                   </Card.Body>
                 </Card>
-              </div>
+              </Col>
               {/* comment */}
-              <div class="col d-flex justify-content-center pb-3">
+              <Col className="d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
@@ -326,9 +326,9 @@ const Project = () => {
                     </Button>
                   </Card.Body>
                 </Card>
-              </div>
+              </Col>
               {/* comment */}
-              <div class="col d-flex justify-content-center pb-3">
+              <Col className="d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
@@ -351,9 +351,9 @@ const Project = () => {
                     </Button>
                   </Card.Body>
                 </Card>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
         </section>
       </main>
     </>

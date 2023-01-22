@@ -56,7 +56,7 @@ const Home = () => {
             <div className="">
               <h2 className="text-color text-center"> I'm Axel Valentin</h2>
               <p className="text-color text-center">
-                I'm a full stack web developer.
+                Student at Holberton School.
               </p>
             </div>
 
