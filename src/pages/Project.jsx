@@ -1,8 +1,5 @@
 import React from "react";
 
-// import styles
-import "../styles/pages/Project.css";
-
 // import components
 import MySkills from "../components/MySkills";
 import MyProjects from "../components/MyProjects";

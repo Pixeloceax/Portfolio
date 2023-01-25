@@ -1,5 +1,8 @@
 import React from 'react';
 
+// import styles
+import '../styles/components/MyProjects.css';
+
 // import bootstrap components
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";

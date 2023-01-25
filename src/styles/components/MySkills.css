@@ -1,0 +1,19 @@
+.glass-effect-skills {
+    background: rgba(255, 255, 255, 0.57);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    font-size: 1.6rem;
+    border-radius: 10px;
+    font-weight: 600;
+    height: 4.375rem;
+    width: 11.25rem;
+  }
+  
+  @media (max-width: 570px) {
+    .glass-effect-skills {
+      width: auto;
+      height: auto;
+    }
+  }
+  

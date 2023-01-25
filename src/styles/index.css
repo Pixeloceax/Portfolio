@@ -1,10 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 :root {
-  --light-mode-color: rgb(240, 231, 219);
-  --light-mode-text: #000000;
-  --dark-mode-color: #202023;
-  --dark-mode-text: #ffffff;
+  --bg-color: rgb(240, 231, 219);
+  --text-color: #000000;
 }
 
 ::-webkit-scrollbar {
@@ -17,11 +15,12 @@
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
 }
+
 #root {
-  background-color: var(--light-mode-color);
+  background-color: var(--bg-color);
   min-height: 100vh;
 }
 
 .text-color {
-  color: var(--light-mode-text);
+  color: var(--text-color);
 }
