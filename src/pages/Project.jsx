@@ -156,8 +156,9 @@ const Project = () => {
                       {" "}
                       <a
                         className="text-white text-decoration-none"
-                        rel="github-repo"
+                        rel="noopener noreferrer"
                         href="https://github.com/Pixeloceax/holbertonschool-smiling-school"
+                        target="_blank"
                       >
                         {" "}
                         Github
@@ -184,8 +185,9 @@ const Project = () => {
                       {" "}
                       <a
                         className="text-white text-decoration-none"
-                        rel="github-repo"
+                        rel="noopener noreferrer"
                         href="https://github.com/Pixeloceax/holbertonschool-web_front_end"
+                        target="_blank"
                       >
                         {" "}
                         Github
@@ -210,8 +212,9 @@ const Project = () => {
                       {" "}
                       <a
                         className="text-white text-decoration-none"
-                        rel="github-repo"
+                        rel="noopener noreferrer"
                         href="https://github.com/Pixeloceax/holbertonschool-Fun-with-CSS"
+                        target="_blank"
                       >
                         {" "}
                         Github
@@ -237,8 +240,9 @@ const Project = () => {
                       {" "}
                       <a
                         className="text-white text-decoration-none"
-                        rel="github-repo"
+                        rel="noopener noreferrer"
                         href="https://github.com/Pixeloceax/holbertonschool-headphones"
+                        target="_blank"
                       >
                         {" "}
                         Github
@@ -252,23 +256,49 @@ const Project = () => {
 
           <Container className="mb-5">
             <Row>
-              {/* comment */}
+              {/* cv website */}
               <Col className="d-flex justify-content-center pb-3">
                 <Card
                   className="glass-effect-project"
                   style={{ width: "18rem" }}
                 >
                   <Card.Body>
-                    <Card.Title>future project</Card.Title>
-                    <Card.Text>coming soon</Card.Text>
+                    <Card.Title>This website</Card.Title>
+                    <Card.Text> my cv online </Card.Text>
                     <br />
                     <br />
                     <Button variant="dark">
                       {" "}
                       <a
                         className="text-white text-decoration-none"
-                        rel="github-repo"
-                        href="github.com/Pixeloceax/"
+                        rel="noopener noreferrer"
+                        href="https://github.com/Pixeloceax/Portfolio"
+                        target="_blank"
+                      >
+                        {" "}
+                        Github
+                      </a>
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              {/* web back end */}
+              <Col className="d-flex justify-content-center pb-3">
+                <Card
+                  className="glass-effect-project"
+                  style={{ width: "18rem" }}
+                >
+                  <Card.Body>
+                    <Card.Title> Web back end </Card.Title>
+                    <Card.Text> back-end exercise, overview of the tech learned for the back</Card.Text>
+                    <br />
+                    <Button variant="dark">
+                      {" "}
+                      <a
+                        className="text-white text-decoration-none"
+                        rel="noopener noreferrer"
+                        href="https://github.com/Pixeloceax/holbertonschool-web_back_end"
+                        target="_blank"
                       >
                         {" "}
                         Github
@@ -292,8 +322,9 @@ const Project = () => {
                       {" "}
                       <a
                         className="text-white text-decoration-none"
-                        rel="github-repo"
+                        rel="noopener noreferrer"
                         href="github.com/Pixeloceax/"
+                        target="_blank"
                       >
                         {" "}
                         Github
@@ -317,33 +348,9 @@ const Project = () => {
                       {" "}
                       <a
                         className="text-white text-decoration-none"
-                        rel="github-repo"
+                        rel="noopener noreferrer"
                         href="github.com/Pixeloceax/"
-                      >
-                        {" "}
-                        Github
-                      </a>
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              {/* comment */}
-              <Col className="d-flex justify-content-center pb-3">
-                <Card
-                  className="glass-effect-project"
-                  style={{ width: "18rem" }}
-                >
-                  <Card.Body>
-                    <Card.Title>future project</Card.Title>
-                    <Card.Text>coming soon</Card.Text>
-                    <br />
-                    <br />
-                    <Button variant="dark">
-                      {" "}
-                      <a
-                        className="text-white text-decoration-none"
-                        rel="github-repo"
-                        href="github.com/Pixeloceax/"
+                        target="_blank"
                       >
                         {" "}
                         Github
