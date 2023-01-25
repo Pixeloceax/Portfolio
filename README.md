@@ -1,12 +1,3 @@
-# WARNING:
-
-## **This project is not finished.**
-
-    bug can be found.
-
-<br/>
-<br/>
-
 # Hi, I'm Axel Valentin! 👋
 
 Welcome to my portfolio! Here you will find a collection of my past projects and experiences. I am excited to share my skills and knowledge with you, and I look forward to connecting with you. Please feel free to contact me if you have any questions or would like to collaborate on a project.
