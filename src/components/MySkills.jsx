@@ -1,5 +1,8 @@
 import React from 'react';
 
+// import styles
+import '../styles/components/MySkills.css';
+
 // import bootstrap components
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -62,7 +65,7 @@ const Skills = () => {
               <Col sm>
                 <div>
                   {skillGroup.map((image, index) => (
-                    <div className="glass-effect-skill p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
+                    <div className="glass-effect-skills p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
                       <p key={index}></p>
                       {image.alt.split("-")[0]}
                       <img
