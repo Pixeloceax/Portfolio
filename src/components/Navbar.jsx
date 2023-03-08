@@ -36,10 +36,12 @@ const MyNavbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="link-text text-color m-0 pl-5">
-                <img src={github_icon} alt="github-logo" width="16px" />
+            <div className="d-flex justify-content-center">  
+              <img src={github_icon} alt="github-logo" width="16px"/>
+              <p className="link-text text-color m-0">
                 Github
               </p>
+            </div>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
