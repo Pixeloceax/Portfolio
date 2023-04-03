@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 // import styles
-import '../styles/components/MySkills.css';
+import "../styles/components/MySkills.css";
 
 // import bootstrap components
 import Col from "react-bootstrap/Col";
@@ -19,6 +19,7 @@ import git from "../assets/icons/git-icon.svg";
 import github from "../assets/icons/github-icon.svg";
 
 import react from "../assets/icons/react.svg";
+import nodejs from "../assets/icons/nodejs-icon.svg";
 import bootstrap from "../assets/icons/bootstrap.svg";
 import tailwind from "../assets/icons/tailwindcss-icon.svg";
 
@@ -40,6 +41,7 @@ const tools = [
 
 const framework = [
   { img: react, alt: "React-icon" },
+  { img: nodejs, alt: "NodeJS-icon" },
   { img: bootstrap, alt: "Bootstrap-icon" },
   { img: tailwind, alt: "Tailwind-icon" },
 ];
@@ -49,40 +51,35 @@ const database = [
   { img: mongodb, alt: "MongoDB-icon" },
 ];
 
-const skills = [
-  language,
-  framework,
-  database,
-  tools,
-];
+const skills = [language, framework, database, tools];
 
 const Skills = () => {
-    return (
-        <>
-        <Container>
-          <Row>
-            {skills.map((skillGroup, index) => (
-              <Col sm>
-                <div>
-                  {skillGroup.map((image, index) => (
-                    <div className="glass-effect-skills p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
-                      <p key={index}></p>
-                      {image.alt.split("-")[0]}
-                      <img
-                        src={image.img}
-                        alt={image.alt}
-                        width="30px"
-                        height="30px"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </Col>
-            ))}
-            </Row>
-          </Container>
-        </>
-    );
+  return (
+    <>
+      <Container>
+        <Row>
+          {skills.map((skillGroup, index) => (
+            <Col sm>
+              <div>
+                {skillGroup.map((image, index) => (
+                  <div className="glass-effect-skills p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
+                    <p key={index}></p>
+                    {image.alt.split("-")[0]}
+                    <img
+                      src={image.img}
+                      alt={image.alt}
+                      width="30px"
+                      height="30px"
+                    />
+                  </div>
+                ))}
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </>
+  );
 };
 
 export default Skills;
