@@ -7,6 +7,7 @@ import "../styles/pages/Contact.css";
 import phone from "../assets/icons/phone-icon.svg";
 import email from "../assets/icons/mail-icon.svg";
 import linkedin from "../assets/icons/linkedin-icon.svg";
+import resume from "../assets/icons/resume-icon.svg";
 
 // import bootstrap components
 import Button from "react-bootstrap/Button";
@@ -19,6 +20,8 @@ const contact = () => {
     phone: "I can't take call, I am affected by deafness",
     email: "axel.valentinbvs@yahoo.com",
     linkedin: "https://www.linkedin.com/in/axelvalentin/",
+    resume:
+      "https://drive.google.com/file/d/1qo7GbvXBCtyjH94-tbm-WT0UEkKJE2zI/view?usp=sharing",
   };
 
   const handleClick = () => {
@@ -30,6 +33,12 @@ const contact = () => {
   const handleLinkedIn = () => {
     if (typeof window !== "undefined") {
       window.open(`${contactInfo.linkedin}`, "_blank");
+    }
+  };
+
+  const handleResume = () => {
+    if (typeof window !== "undefined") {
+      window.open(`${contactInfo.resume}`, "_blank");
     }
   };
 
@@ -103,6 +112,36 @@ const contact = () => {
                   <div className="d-flex justify-content-center">
                     <Button variant="dark" size="lg" onClick={handleLinkedIn}>
                       Connect
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col xs={12} md={6} className="mt-3">
+              <Card className="glass-effect-contact">
+                <Card.Body>
+                  <Card.Title className="text-color test-padding text-center">
+                    <img
+                      src={resume}
+                      alt="linkedin-icon"
+                      width="5%"
+                      className="pb-1"
+                    />
+                    Get my resume
+                  </Card.Title>
+                  <Card.Text className="text-color text-center">
+                    Download my resume
+                  </Card.Text>
+                  <div className="d-flex justify-content-center">
+                    <Button
+                      variant="dark"
+                      size="lg"
+                      onClick={() => {
+                        handleResume();
+                      }}
+                    >
+                      Download
                     </Button>
                   </div>
                 </Card.Body>
