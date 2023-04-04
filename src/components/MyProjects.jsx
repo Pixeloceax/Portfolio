@@ -60,7 +60,8 @@ const projects = [
 
   {
     title: "This Profile does not exist",
-    description: "web application that show a random profile",
+    description:
+      "web application that show a random profile with randomuser API",
     github: "https://github.com/Pixeloceax/React_project/tree/main/tpdne",
   },
 ];
