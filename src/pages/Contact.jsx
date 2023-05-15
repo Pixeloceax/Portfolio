@@ -21,7 +21,7 @@ const contact = () => {
     email: "axel.valentinbvs@yahoo.com",
     linkedin: "https://www.linkedin.com/in/axelvalentin/",
     resume:
-      "https://drive.google.com/file/d/1qo7GbvXBCtyjH94-tbm-WT0UEkKJE2zI/view?usp=sharing",
+      "https://drive.google.com/file/d/1d6Kw6n1RhcerBDMIMKR-sCywVm79eRAi/view",
   };
 
   const handleClick = () => {
