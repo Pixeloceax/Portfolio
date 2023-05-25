@@ -59,12 +59,14 @@ const Skills = () => {
       <Container>
         <Row>
           {skills.map((skillGroup, index) => (
-            <Col sm>
+            <Col sm key={index}>
               <div>
-                {skillGroup.map((image, index) => (
-                  <div className="glass-effect-skills p-3 mb-3 mr-3 d-flex align-items-center justify-content-center">
-                    <p key={index}></p>
-                    {image.alt.split("-")[0]}
+                {skillGroup.map((image, innerIndex) => (
+                  <div
+                    className="glass-effect-skills p-3 mb-3 mr-3 d-flex align-items-center justify-content-center"
+                    key={innerIndex}
+                  >
+                    <p>{image.alt.split("-")[0]}</p>
                     <img
                       src={image.img}
                       alt={image.alt}

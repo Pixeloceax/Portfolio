@@ -72,8 +72,7 @@ const MyProjects = () => {
       <Container className="my-5">
         <Row>
           {projects.map((project, index) => (
-            <Col sm className="d-flex justify-content-center pb-3">
-              {" "}
+            <Col sm className="d-flex justify-content-center pb-3" key={index}>
               <Card className="glass-effect-project" style={{ width: "18rem" }}>
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
@@ -81,14 +80,12 @@ const MyProjects = () => {
                     {project.description}
                   </Card.Text>
                   <Button variant="dark">
-                    {" "}
                     <a
                       className="text-white text-decoration-none"
                       rel="noopener noreferrer"
                       href={project.github}
                       target="_blank"
                     >
-                      {" "}
                       Github
                     </a>
                   </Button>
