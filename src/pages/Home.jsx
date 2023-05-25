@@ -47,6 +47,8 @@ const Home = () => {
                 src={me}
                 alt="AxelValentin"
                 className="responsive-img-home-page border border-light border-4 rounded-circle pl-5"
+                width={450}
+                height={450}
               />
             </div>
           </Col>
