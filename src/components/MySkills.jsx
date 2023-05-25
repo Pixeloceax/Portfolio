@@ -26,32 +26,41 @@ import tailwind from "../assets/icons/tailwindcss-icon.svg";
 import mysql from "../assets/icons/mysql-icon.svg";
 import mongodb from "../assets/icons/mongodb-icon.svg";
 
-const language = [
-  { img: html, alt: "HTML-icon" },
-  { img: css, alt: "CSS-icon" },
-  { img: js, alt: "JS-icon" },
-  { img: python, alt: "Python-icon" },
+const skills = [
+  {
+    title: "Language",
+    icons: [
+      { img: html, alt: "HTML-icon" },
+      { img: css, alt: "CSS-icon" },
+      { img: js, alt: "JS-icon" },
+      { img: python, alt: "Python-icon" },
+    ],
+  },
+  {
+    title: "Tools",
+    icons: [
+      { img: vscode, alt: "VSCode-icon" },
+      { img: git, alt: "Git-icon" },
+      { img: github, alt: "Github-icon" },
+    ],
+  },
+  {
+    title: "Framework",
+    icons: [
+      { img: react, alt: "React-icon" },
+      { img: nodejs, alt: "NodeJS-icon" },
+      { img: bootstrap, alt: "Bootstrap-icon" },
+      { img: tailwind, alt: "Tailwind-icon" },
+    ],
+  },
+  {
+    title: "Database",
+    icons: [
+      { img: mysql, alt: "MySQL-icon" },
+      { img: mongodb, alt: "MongoDB-icon" },
+    ],
+  },
 ];
-
-const tools = [
-  { img: vscode, alt: "VSCode-icon" },
-  { img: git, alt: "Git-icon" },
-  { img: github, alt: "Github-icon" },
-];
-
-const framework = [
-  { img: react, alt: "React-icon" },
-  { img: nodejs, alt: "NodeJS-icon" },
-  { img: bootstrap, alt: "Bootstrap-icon" },
-  { img: tailwind, alt: "Tailwind-icon" },
-];
-
-const database = [
-  { img: mysql, alt: "MySQL-icon" },
-  { img: mongodb, alt: "MongoDB-icon" },
-];
-
-const skills = [language, framework, database, tools];
 
 const Skills = () => {
   return (
@@ -61,12 +70,12 @@ const Skills = () => {
           {skills.map((skillGroup, index) => (
             <Col sm key={index}>
               <div>
-                {skillGroup.map((image, innerIndex) => (
+                {skillGroup.icons.map((image, innerIndex) => (
                   <div
                     className="glass-effect-skills p-3 mb-3 mr-3 d-flex align-items-center justify-content-center"
                     key={innerIndex}
                   >
-                    <p>{image.alt.split("-")[0]}</p>
+                    <p className="m-0">{image.alt.split("-")[0]}</p>
                     <img
                       src={image.img}
                       alt={image.alt}
