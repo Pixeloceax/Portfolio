@@ -27,3 +27,10 @@
   padding-right: 4%;
   border-radius: 5px;
 }
+
+@media (max-width: 600px) {
+  .responsive-img-home-page {
+    width: 70%;
+    height: auto;
+  }
+}

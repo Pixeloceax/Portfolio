@@ -1,12 +1,12 @@
 import React from "react";
 
-//icons
+// icons
 import catIcon from "../assets/icons/cat-icon.svg";
 import bookIcon from "../assets/icons/book-icon.svg";
 import gameIcon from "../assets/icons/game-icon.svg";
 import newTechIcon from "../assets/icons/new-tech-icon.svg";
 
-//css
+// css
 import "../styles/components/MyPassions.css";
 
 // bootstrap
@@ -36,40 +36,40 @@ const MyPassions = () => {
       title: "New Technologies",
       icon: newTechIcon,
       description:
-        " I am constantly seeking out innovative and thrilling technologies that can enhance our lives, be it the newest smartphones, laptops, or even smart home devices.",
+        "I am constantly seeking out innovative and thrilling technologies that can enhance our lives, be it the newest smartphones, laptops, or even smart home devices.",
     },
   ];
 
   return (
-    <>
-      <Container className="mt-5 py-5">
-        <Row className="pt-3">
-          {passions.map((passion, index) => (
-            <Col key={index} md={3}>
-              <Card
-                className="glass_effect_MyPassions"
-                style={{ width: "20rem" }}
-              >
-                <Card.Body>
-                  <Card.Title className="text-center">
-                    {passion.title}
-                  </Card.Title>
-                  <Card.Img
-                    className="py-2"
-                    src={passion.icon}
-                    alt={`${passion.title}-icon`}
-                    width="10%"
-                  />
-                  <Card.Text className="text-center">
-                    {passion.description}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </>
+    <Container className="mt-5 py-5">
+      <Row className="pt-3">
+        {passions.map((passion, index) => (
+          <Col
+            className="pt-3 d-flex justify-content-center"
+            key={index}
+            xs={12}
+            sm={6}
+            md={4}
+            lg={3}
+          >
+            <Card className="glass_effect_MyPassions" style={{ width: "85%" }}>
+              <Card.Body>
+                <Card.Title className="text-center">{passion.title}</Card.Title>
+                <Card.Img
+                  className="py-2"
+                  src={passion.icon}
+                  alt={`${passion.title}-icon`}
+                  width="10%" // Adjust the icon size as desired
+                />
+                <Card.Text className="text-center">
+                  {passion.description}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 };
 

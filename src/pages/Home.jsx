@@ -39,10 +39,19 @@ const Home = () => {
 
   return (
     <>
-      <Container className="pt-5 mt-5">
+      <Container className="pt-5">
         <Row>
+          <Col md={6} className="order-md-2">
+            <div className="text-center pb-5">
+              <img
+                src={me}
+                alt="AxelValentin"
+                className="responsive-img-home-page border border-light border-4 rounded-circle pl-5"
+              />
+            </div>
+          </Col>
           <Col
-            className="d-flex align-items-center justify-content-center"
+            className="d-flex align-items-center justify-content-center order-md-1"
             md={6}
           >
             <div className="text-section">
@@ -93,15 +102,6 @@ const Home = () => {
                   </div>
                 </Collapse>
               </Row>
-            </div>
-          </Col>
-          <Col md={6}>
-            <div className="text-center">
-              <img
-                src={me}
-                alt="AxelValentin"
-                className="border border-light border-4 rounded-circle pl-5"
-              />
             </div>
           </Col>
         </Row>
