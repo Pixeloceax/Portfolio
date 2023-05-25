@@ -67,7 +67,12 @@ const Home = () => {
                 <div className="d-flex align-items-center">
                   <div className="barre"></div>
                   <button className="about-me-button" onClick={toggleCollapse}>
-                    <img src={icon} alt="arrow-icons" className="arrow-icon" />
+                    <img
+                      src={icon}
+                      alt="arrow-icons"
+                      loading="lazy"
+                      className="arrow-icon"
+                    />
                   </button>
                   <div className="barre"></div>
                 </div>

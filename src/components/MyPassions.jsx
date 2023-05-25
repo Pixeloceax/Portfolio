@@ -59,7 +59,8 @@ const MyPassions = () => {
                   className="py-2"
                   src={passion.icon}
                   alt={`${passion.title}-icon`}
-                  width="10%" // Adjust the icon size as desired
+                  loading="lazy"
+                  width="10%"
                 />
                 <Card.Text className="text-center">
                   {passion.description}
