@@ -1,53 +1,50 @@
-import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
-// import react bootstrap components
-import { Navbar, Nav } from "react-bootstrap";
+import navlogo from "../assets/icons/others/cat-icon.svg";
 
-// import css
-import "../styles/components/Navbar.css";
+function NavbarOffcanvas() {
+  const handleHomeClick = () => {
+    window.scrollTo(0, 0);
+  };
 
-//import cat icons
-import cat_icon from "../assets/icons/cat-icon.svg";
-import github_icon from "../assets/icons/github-icon.svg";
-
-const MyNavbar = () => {
   return (
     <>
-      <Navbar expand="lg" sticky="top" className=" glass_effect">
-        <Navbar.Brand href="/home">
-          <p className="d-flex home-link-text m-0 text-color">
-            {" "}
-            <img src={cat_icon} alt="cat-icon" width="24px" />
+      <Navbar key="lg" expand="lg" className="bg-body-tertiary sticky-top">
+        <Container fluid>
+          <Navbar.Brand className="d-flex" onClick={handleHomeClick}>
             Axel Valentin
-          </p>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="text-center">
-            <Nav.Link href="/project">
-              <p className="link-text m-0 text-color">Project</p>
-            </Nav.Link>
-            <Nav.Link href="/contact">
-              {" "}
-              <p className="link-text m-0 text-color"> Contact</p>
-            </Nav.Link>
-            <Nav.Link
-              href="https://github.com/Pixeloceax"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <div className="d-flex justify-content-center">  
-              <img src={github_icon} alt="github-logo" width="16px"/>
-              <p className="link-text text-color m-0">
-                Github
-              </p>
+            <div>
+              <img width="24px" src={navlogo} alt="logo" />
             </div>
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
+          <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-lg`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                Offcanvas
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav.Link onClick={handleHomeClick}>Home</Nav.Link>
+                <Nav.Link href="#about">About</Nav.Link>
+                <Nav.Link href="#skills">Skills</Nav.Link>
+                <Nav.Link href="#projects">Projects</Nav.Link>
+                <Nav.Link href="#contact">Contact me</Nav.Link>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
       </Navbar>
     </>
   );
-};
+}
 
-export default MyNavbar;
+export default NavbarOffcanvas;

@@ -1,32 +1,15 @@
 import React from "react";
-
-/* import react router dom */
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-/* import bootstrap */
-import "bootstrap/dist/css/bootstrap.min.css";
-
-/* import pages */
-import Home from "./pages/Home";
-import Project from "./pages/Project";
-import Contact from "./pages/Contact";
-
-/* import components */
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/main";
 
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
+      <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 };
