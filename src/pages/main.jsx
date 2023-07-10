@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
 import Ticker from "../components/Ticker";
 import CircleTextAnimation from "../components/CircleTextAnimation";
+
+import Card from "../components/Card";
 
 // import hbtn from "../assets/images/hbtn.png";
 
@@ -33,8 +30,7 @@ const Main = () => {
 
   return (
     <>
-      <Navbar />
-      <section id="main" className="bg-dark sectionSize">
+      <section id="main" className="main__section">
         <div>
           <div>
             <div>
@@ -75,12 +71,12 @@ const Main = () => {
             <div className="about__badge">
               <div className="about__badge-name">About me</div>
               <div className="about__badge-bottom">
-                <span>I'm a software engineer</span>
+                <span>I'm a Full Stack engineer</span>
               </div>
             </div>
             <div className="about__text">
               <p className="about__blurb">
-                I'm a 20-year-old software engineer based in Lille, France,
+                I'm a 20-year-old Full Stack engineer based in Lille, France,
                 specializing in Back End development.
               </p>
             </div>
@@ -130,9 +126,40 @@ const Main = () => {
         </div>
       </section>
 
-      <Skills />
-      <Projects />
-      <Contact />
+      <section id="projects" className="projects__section">
+        <div className="H__line"></div>
+        <div className="text__container">
+          <div className="projects__card__container ">
+            <div>
+              <Card
+                title="Obole"
+                description="Online bank M.E.R.N app"
+                imageSrc="https://i.pinimg.com/originals/99/9d/02/999d0250aef1ea1199f132f39f391697.jpg"
+              />
+              <Card
+                title="Obole"
+                description="Online bank M.E.R.N app"
+                imageSrc="https://i.pinimg.com/originals/99/9d/02/999d0250aef1ea1199f132f39f391697.jpg"
+              />
+            </div>
+            <div>
+              <Card
+                title="Obole"
+                description="Online bank M.E.R.N app"
+                imageSrc="https://i.pinimg.com/originals/99/9d/02/999d0250aef1ea1199f132f39f391697.jpg"
+              />
+              <Card
+                title="Obole"
+                description="Online bank M.E.R.N app"
+                imageSrc="https://i.pinimg.com/originals/99/9d/02/999d0250aef1ea1199f132f39f391697.jpg"
+              />
+            </div>
+          </div>
+
+          <div className="V__line"></div>
+          <h1 className="text__orientation">Projects</h1>
+        </div>
+      </section>
     </>
   );
 };
