@@ -13,6 +13,7 @@ import Card from "../components/Card";
 
 import linkedin from "../assets/icons/others/linkedin-icon.svg";
 import github from "../assets/icons/tools/github-icon.svg";
+import Skills from "../components/Skills";
 
 const Main = () => {
   const news = [
@@ -31,23 +32,41 @@ const Main = () => {
   return (
     <>
       <section id="main" className="main__section">
-        <div>
-          <div>
+        <div className="main__container">
+          <div className="main__text__container">
             <div>
               <p>
-                Hello, I'm
+                Hello, I'm <span>Axel Valentin, </span>
                 <br />
-                Axel Valentin, <span>Full Stack Web Developer</span> from
+                <span>Full Stack engineer</span> from
                 <span> France</span>
                 <br />
                 <p>Student at Holberton School</p>
-                <br />
-                <p>Contact me</p>
-                <p>get cv</p>
               </p>
+              <div className="main__button">
+                <button>Get my CV</button>
+                <button>Contact me</button>
+              </div>
+            </div>
+          </div>
+          <div className="main__img">
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Eiffel_Tower_Vertical.JPG"
+                alt=""
+              />
             </div>
             <div>
-              <img src="" alt="avatar" />
+              <img
+                src="https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWwlMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -155,9 +174,62 @@ const Main = () => {
               />
             </div>
           </div>
-
           <div className="V__line"></div>
           <h1 className="text__orientation">Projects</h1>
+        </div>
+      </section>
+
+      <section id="skills" className="skills__section">
+        <div className="skills__H__line"></div>
+        <div className="skills__V__line">
+          <div className="skills__title__container">
+            <h1 className="skills__title">Skills</h1>
+          </div>
+        </div>
+        <div className="skills__content">
+          <Skills />
+        </div>
+      </section>
+
+      <section id="contact" className="contact__section">
+        <div className="contact__inner">
+          <div className="contact__content">
+            <div className="contact__badge">
+              <div className="contact__badge-name">Contact me</div>
+
+              <div className="contact__badge-bottom">
+                <span>Let's get in touch</span>
+              </div>
+            </div>
+            <div className="contact__text">
+              <p className="contact__blurb">
+                I'm currently looking for a job as a Full Stack engineer.
+              </p>
+            </div>
+            <div className="contact__text">
+              <p className="contact__blurb">
+                If you have any questions or want to work together, feel free to
+                contact me.
+              </p>
+
+              <div className="contact__social">
+                <a
+                  href="https://www.linkedin.com/in/axelvalentin/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={linkedin} alt="linkedin" width={30} height={30} />
+                </a>
+                <a
+                  href="github.com/pixeloceax"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={github} alt="github" width={30} height={30} />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
