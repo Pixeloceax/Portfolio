@@ -1,19 +1,16 @@
 import React from "react";
 import Ticker from "../components/Ticker";
 import CircleTextAnimation from "../components/CircleTextAnimation";
-
 import Card from "../components/Card";
-
-// import hbtn from "../assets/images/hbtn.png";
-
-// import manga from "../assets/icons/others/book-icon.svg";
-// import cat from "../assets/icons/others/cat-icon.svg";
-// import game from "../assets/icons/others/game-icon.svg";
-// import domotics from "../assets/icons/others/new-tech-icon.svg";
-
 import linkedin from "../assets/icons/others/linkedin-icon.svg";
 import github from "../assets/icons/tools/github-icon.svg";
-import Skills from "../components/Skills";
+import Navbar from "../components/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPhoneSlash,
+  faEnvelope,
+  faFileDownload,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Main = () => {
   const news = [
@@ -29,9 +26,24 @@ const Main = () => {
     "Save the planet that only one with beer",
   ];
 
+  const resumelink =
+    "https://drive.google.com/file/d/1wFH3qRg_NEeyZXCAOPu98ZaO8MOWQx-4/view?usp=sharing";
+
+  const handleEmailClick = () => {
+    const email = "axel.valentinbvs@yahoo.com";
+    navigator.clipboard.writeText(email);
+    alert("Adresse e-mail copiée !");
+  };
+
+  const handleResumeClick = () => {
+    window.location.href = resumelink;
+  };
+
   return (
     <>
       <section id="main" className="main__section">
+        <Navbar />
+
         <div className="main__container">
           <div className="main__text__container">
             <div>
@@ -40,12 +52,22 @@ const Main = () => {
                 <br />
                 <span>Full Stack engineer</span> from
                 <span> France</span>
-                <br />
-                <p>Student at Holberton School</p>
               </p>
+              <p>Student at Holberton School</p>
               <div className="main__button">
-                <button>Get my CV</button>
-                <button>Contact me</button>
+                <button>
+                  <a
+                    href={resumelink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    Get my CV
+                  </a>
+                </button>
+                <button>
+                  <a href="#contact">Contact me</a>
+                </button>
               </div>
             </div>
           </div>
@@ -78,8 +100,6 @@ const Main = () => {
           <img
             src="https://blog.holbertonschool.com/wp-content/uploads/2020/10/Holberton-School-Hauts-de-France-1.png"
             alt="template"
-            width={960}
-            height={660}
           />
         </div>
 
@@ -179,24 +199,16 @@ const Main = () => {
         </div>
       </section>
 
-      <section id="skills" className="skills__section">
-        <div className="skills__H__line"></div>
-        <div className="skills__V__line">
-          <div className="skills__title__container">
-            <h1 className="skills__title">Skills</h1>
-          </div>
-        </div>
-        <div className="skills__content">
-          <Skills />
-        </div>
-      </section>
-
       <section id="contact" className="contact__section">
+        <div className="contact__H__line"></div>
+        <div className="contact__V__line"></div>
+
         <div className="contact__inner">
           <div className="contact__content">
             <div className="contact__badge">
-              <div className="contact__badge-name">Contact me</div>
-
+              <div className="contact__badge-name">
+                <h1> Contact me</h1>
+              </div>
               <div className="contact__badge-bottom">
                 <span>Let's get in touch</span>
               </div>
@@ -212,20 +224,42 @@ const Main = () => {
                 contact me.
               </p>
 
+              <div className="contact__informations">
+                <div className="contact__informations__item">
+                  <FontAwesomeIcon icon={faPhoneSlash} />
+                  <p onClick={handleEmailClick}>
+                    I can't take calls, I am affected by deafness
+                  </p>
+                </div>
+                <div className="contact__informations__item">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  <p onClick={handleEmailClick}>
+                    You can send me an email @ axel.valentinbvs@yahoo.com
+                  </p>
+                </div>
+                <div
+                  className="contact__informations__item"
+                  onClick={handleResumeClick}
+                >
+                  <FontAwesomeIcon icon={faFileDownload} />
+                  <p>Get my resume Download my resume</p>
+                </div>
+              </div>
+
               <div className="contact__social">
                 <a
                   href="https://www.linkedin.com/in/axelvalentin/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={linkedin} alt="linkedin" width={30} height={30} />
+                  <img src={linkedin} alt="linkedin" width="30" height="30" />
                 </a>
                 <a
                   href="github.com/pixeloceax"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={github} alt="github" width={30} height={30} />
+                  <img src={github} alt="github" width="30" height="30" />
                 </a>
               </div>
             </div>

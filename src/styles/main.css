@@ -1,0 +1,133 @@
+/* main */
+
+.main__section {
+  background-color: #000;
+  height: 90vh;
+  color: #fff;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  height: 85%;
+}
+
+.main__text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.main__text__container div,
+.main__text__container div {
+  color: #ffffff;
+  text-align: center;
+}
+
+.main__text__container p {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.main__text__container span {
+  font-weight: bold;
+}
+
+.main__button {
+  display: flex;
+  align-items: center;
+}
+
+.main__button button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__text__container button {
+  display: inline-block;
+  padding: 15px 55px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.05s ease-in-out, background 0.5s ease-in-out;
+  margin-left: 1.25rem;
+}
+
+.main__text__container button:hover,
+.main__text__container button:focus {
+  color: #000;
+  background: #fff;
+  outline: none;
+}
+
+.main__img {
+  display: flex;
+  height: 100%;
+}
+
+.main__img div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
+  height: 100%;
+}
+
+.main__img div img {
+  height: 550px;
+  width: 250px;
+  border-radius: 120px 0px 120px 0px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1300px) {
+  .main__container {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .main__text__container {
+    width: 100%;
+    order: 2;
+    margin-bottom: 2rem;
+  }
+
+  .main__img div {
+    margin-right: 0;
+  }
+
+  .main__img div img {
+    height: 400px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__text__container p {
+    font-size: 1.4rem;
+  }
+
+  .main__text__container button {
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main__img div img {
+    border-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .main__img div img {
+    height: 290px;
+    width: 100px;
+  }
+}

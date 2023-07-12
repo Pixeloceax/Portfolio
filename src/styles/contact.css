@@ -1,0 +1,101 @@
+/* Styles for the contact section */
+.contact__section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0px 50px 50px 50px;
+}
+
+.contact__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.contact__badge {
+  margin-bottom: 20px;
+}
+
+.contact__badge-name {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  right: 10.375rem;
+  text-align: center;
+  letter-spacing: 20px;
+}
+
+.contact__badge-name {
+  bottom: -155%;
+}
+
+.contact__badge-bottom {
+  font-size: 14px;
+}
+
+.contact__text {
+  margin-bottom: 20px;
+}
+
+.contact__blurb {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact__social {
+  margin-top: 20px;
+}
+
+.contact__social a {
+  filter: invert(100%);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact__V__line {
+  z-index: 99999;
+  border-right: 1px solid #fff;
+  height: 9.5vh;
+  margin-right: 50%;
+  position: relative;
+}
+
+.contact__H__line {
+  z-index: 1;
+  position: relative;
+  border-top: 1px solid #fff;
+  width: 52.9rem;
+  margin-left: 50%;
+}
+
+.contact__informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: #fff solid 1px;
+}
+
+.contact__informations__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+}
+
+/* Styles for the social media icons */
+.contact__social img {
+  filter: grayscale(100%);
+}
+
+/* Styles to make the section responsive */
+@media (max-width: 600px) {
+  .contact__content {
+    padding: 0 20px;
+  }
+}

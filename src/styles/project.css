@@ -1,0 +1,42 @@
+.projects__section {
+  height: 80vh;
+  background-color: #000;
+}
+
+.text__orientation {
+  -ms-transform: rotate(-90deg);
+  transform: rotate(90deg);
+  width: 100px;
+  text-align: center;
+  letter-spacing: 45px;
+  margin-bottom: 20%;
+}
+
+.text__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80vh;
+  color: #fff;
+}
+
+.V__line {
+  z-index: 99999;
+  border-right: 1px solid #fff;
+  height: 80.1vh;
+  margin-right: 10px;
+  position: relative;
+}
+
+.H__line {
+  z-index: 1;
+  position: relative;
+  border-top-width: 1px;
+  border-top: 1px solid #fff;
+  width: 112.8rem;
+}
+
+.projects__card__container {
+  display: flex;
+  align-items: center;
+}
