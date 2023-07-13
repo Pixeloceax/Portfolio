@@ -16,7 +16,7 @@
 
 .circle-text-animation-placement {
   position: absolute;
-  top: 116%;
+  top: 128%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

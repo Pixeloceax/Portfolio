@@ -11,6 +11,7 @@ import {
   faEnvelope,
   faFileDownload,
 } from "@fortawesome/free-solid-svg-icons";
+import cinemaimg from "../assets/images/cinema.png";
 
 const Main = () => {
   const news = [
@@ -139,8 +140,6 @@ const Main = () => {
                 src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3RbzfW?utm_source=generator&theme=0"
                 width="70%"
                 height="152"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
             </div>
@@ -154,7 +153,7 @@ const Main = () => {
                 <img src={linkedin} alt="linkedin" width={30} height={30} />
               </a>
               <a
-                href="github.com/pixeloceax"
+                href="https://github.com/Pixeloceax"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -173,25 +172,21 @@ const Main = () => {
               <Card
                 title="Obole"
                 description="Online bank M.E.R.N app"
-                imageSrc="https://i.pinimg.com/originals/99/9d/02/999d0250aef1ea1199f132f39f391697.jpg"
+                imageSrc="https://github.com/Pixeloceax/Obole/raw/main/obole.png"
               />
               <Card
-                title="Obole"
-                description="Online bank M.E.R.N app"
-                imageSrc="https://i.pinimg.com/originals/99/9d/02/999d0250aef1ea1199f132f39f391697.jpg"
+                title="Auth Backend MongoDB"
+                description="Login, register, middleware"
+                imageSrc="https://github.com/Pixeloceax/auth-backend-mongo/raw/main/code.png"
               />
             </div>
             <div>
               <Card
-                title="Obole"
-                description="Online bank M.E.R.N app"
-                imageSrc="https://i.pinimg.com/originals/99/9d/02/999d0250aef1ea1199f132f39f391697.jpg"
+                title="Cinema Guru"
+                description="impl from scrath with movies API"
+                imageSrc={cinemaimg}
               />
-              <Card
-                title="Obole"
-                description="Online bank M.E.R.N app"
-                imageSrc="https://i.pinimg.com/originals/99/9d/02/999d0250aef1ea1199f132f39f391697.jpg"
-              />
+              <Card title="" description="" imageSrc="" />
             </div>
           </div>
           <div className="V__line"></div>
@@ -255,7 +250,7 @@ const Main = () => {
                   <img src={linkedin} alt="linkedin" width="30" height="30" />
                 </a>
                 <a
-                  href="github.com/pixeloceax"
+                  href="https://github.com/Pixeloceax"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -33,7 +33,7 @@
 }
 
 .contact__badge-bottom {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .contact__text {
@@ -41,7 +41,7 @@
 }
 
 .contact__blurb {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -88,12 +88,16 @@
   width: 50%;
 }
 
-/* Styles for the social media icons */
+.contact__informations__item p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
 .contact__social img {
   filter: grayscale(100%);
 }
 
-/* Styles to make the section responsive */
 @media (max-width: 600px) {
   .contact__content {
     padding: 0 20px;
