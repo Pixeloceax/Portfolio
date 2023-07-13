@@ -209,7 +209,7 @@ const Main = () => {
               <div className="contact__badge-name">
                 <h1> Contact me</h1>
               </div>
-              <div className="contact__badge-bottom">
+              <div className="contact__badge-bottom ">
                 <span>Let's get in touch</span>
               </div>
             </div>
