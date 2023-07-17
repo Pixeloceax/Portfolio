@@ -5,7 +5,7 @@
 
 .about__bg-container {
   width: 100%;
-  max-width: 960px; /* Set a maximum width for the image */
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@
   text-transform: uppercase;
 }
 
-.about__blurb {
+.blurb {
   font-size: 0.9rem;
   letter-spacing: initial;
   line-height: 1.67;

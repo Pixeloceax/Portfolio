@@ -17,8 +17,15 @@
 .circle-text-animation-placement {
   position: absolute;
   top: 128%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1440px) {
+  .circle-text-animation-placement {
+    top: 125%;
+    left: 32%;
+  }
 }
 
 @media only screen and (max-width: 768px) {

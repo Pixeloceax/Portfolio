@@ -1,9 +1,11 @@
 .card__container {
   background-color: #000;
   color: #fff;
-  margin: 0 13px 0 13px;
-  padding: 20px;
+  margin: 0 13px 20px 13px;
+  padding: 15px;
   border: 1px solid #fff;
+  max-width: 500px;
+  margin-bottom: 30px;
 }
 
 .card__text h1 {
@@ -20,8 +22,17 @@
 .card__icons__skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 20px;
+}
+
+.github__card__icons {
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  filter: invert(100%);
+  margin-left: 10px;
 }
 
 .card__icons {
@@ -35,10 +46,12 @@
     justify-content: space-between;
   }
   .card__container {
-    height: 150px;
+    height: auto;
+    padding: 10px;
+    max-width: 100%;
   }
   .card__icons__skills {
-    margin-top: 0;
+    margin-top: 10px;
   }
   .card__icons__skills img {
     margin-top: 0;

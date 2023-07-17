@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import linkedin from "../assets/icons/others/linkedin-icon.svg";
 import github from "../assets/icons/tools/github-icon.svg";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneSlash,
@@ -17,6 +18,9 @@ import NodeJS from "../assets/icons/frameworks/node.svg";
 import MongoDB from "../assets/icons/database/mongodb.svg";
 import Express from "../assets/icons/frameworks/express_white.svg";
 import TypeScript from "../assets/icons/frameworks/typescript.svg";
+import SQL from "../assets/icons/database/mysql.svg";
+
+import axelValentin from "../assets/images/axelVALENTIN2.png";
 
 const Main = () => {
   const news = [
@@ -114,10 +118,7 @@ const Main = () => {
       <Ticker news={news} />
       <section id="about" className="about__section">
         <div className="about__bg-container">
-          <img
-            src="https://blog.holbertonschool.com/wp-content/uploads/2020/10/Holberton-School-Hauts-de-France-1.png"
-            alt="template"
-          />
+          <img src={axelValentin} alt="template" />
         </div>
 
         <CircleTextAnimation />
@@ -131,20 +132,20 @@ const Main = () => {
               </div>
             </div>
             <div className="about__text">
-              <p className="about__blurb">
+              <p className="blurb">
                 I'm a 20-year-old Full Stack engineer based in Lille, France,
                 specializing in Back End development.
               </p>
             </div>
 
             <div className="about__text">
-              <p className="about__blurb">
+              <p className="blurb">
                 I have a passion for learning new JavaScript technologies.
               </p>
             </div>
             <div className="about__text">
               <p>
-                <span className="about__blurb">
+                <span className="blurb">
                   Hobbies : Cat, Manga, Video game, Domotics
                 </span>
               </p>
@@ -152,7 +153,7 @@ const Main = () => {
 
             <div className="about__spotify">
               <div>
-                <p className="about__blurb">my favorite group</p>
+                <p className="blurb">my favorite group</p>
               </div>
               <iframe
                 title="spotify"
@@ -183,49 +184,54 @@ const Main = () => {
         </div>
       </section>
 
-      <Ticker news={news} />
       <section id="projects" className="projects__section">
-        <div className="text__orientation">
-          <h1>Projects</h1>
+        <div className="badge__container">
+          <div className="badge__name">My Projects</div>
         </div>
-        <div className=" projects__container">
-          <Card
-            title="Obole"
-            description="Online Bank, M.E.R.N app"
-            skills={[MongoDB, Express, ReactJS, NodeJS, TypeScript]}
-          />
-          <Card
-            title="Obole"
-            description="Online Bank, M.E.R.N app"
-            skills={[MongoDB, Express, ReactJS, NodeJS]}
-          />
-          <Card
-            title="Obole"
-            description="Online Bank, M.E.R.N app"
-            skills={[MongoDB, Express, ReactJS, NodeJS]}
-          />
+        <div className="projects__container">
+          <div className="projects__container__card">
+            <Card
+              title="Obole"
+              description="Obole is an online banking application built using the M.E.R.N stack."
+              skills={[MongoDB, Express, ReactJS, NodeJS, TypeScript]}
+              githubLink="https://github.com/Pixeloceax/Obole"
+            />
+            <Card
+              title="Auth Backend MongoDB"
+              description=" Authentication backend, login, register, middleware"
+              skills={[MongoDB, Express, NodeJS]}
+              githubLink="https://github.com/Pixeloceax/auth-backend-mongo"
+            />
+            <Card
+              title="Cinema Guru"
+              description="Cinema Guru is a web application that allows you to search for movies and series."
+              skills={[Express, ReactJS, NodeJS, SQL]}
+              githubLink="https://github.com/Pixeloceax/Obole"
+            />
+          </div>
+
+          <div className="projects__container__2"></div>
         </div>
       </section>
 
-      <Ticker news={news} />
       <section id="contact" className="contact__section">
         <div className="contact__inner">
           <div className="contact__content">
             <div className="contact__badge">
-              <div className="contact__badge-name">
-                <h1> Contact me</h1>
+              <div className="badge__container">
+                <div className="badge__name">Contact Me</div>
               </div>
               <div className="contact__badge-bottom ">
-                <span>Let's get in touch</span>
+                <span className="blurb">Let's get in touch</span>
               </div>
             </div>
             <div className="contact__text">
-              <p className="contact__blurb">
+              <p className="blurb">
                 I'm currently looking for a job as a Full Stack engineer.
               </p>
             </div>
             <div className="contact__text">
-              <p className="contact__blurb">
+              <p className="blurb">
                 If you have any questions or want to work together, feel free to
                 contact me.
               </p>
@@ -275,11 +281,13 @@ const Main = () => {
         {popupVisible && (
           <div className="popup">
             <div className="popup__content">
-              <p>Email address copied!</p>
+              <p className="blurb">Email address copied!</p>
             </div>
           </div>
         )}
       </section>
+
+      <Footer />
     </>
   );
 };

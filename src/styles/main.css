@@ -90,6 +90,18 @@
   flex-direction: column;
 }
 
+.decorative__H__line__projects {
+  width: 70%;
+  height: 0;
+  border-top: 2px solid #ffffff;
+}
+
+.decorative__H__line__contact {
+  width: 70%;
+  height: 0;
+  border-top: 2px solid #ffffff;
+  margin-left: auto;
+}
 /* Media Queries */
 
 @media screen and (max-width: 1300px) {
