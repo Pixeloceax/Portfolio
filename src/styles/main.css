@@ -85,6 +85,11 @@
   border-radius: 120px 0px 120px 0px;
 }
 
+.about__spotify {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1300px) {
@@ -127,7 +132,7 @@
 
 @media screen and (max-width: 610px) {
   .main__img div img {
-    height: 290px;
+    height: 270px;
     width: 100px;
   }
 }

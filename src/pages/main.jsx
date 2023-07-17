@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Ticker from "../components/Ticker";
 import CircleTextAnimation from "../components/CircleTextAnimation";
 import Card from "../components/Card";
@@ -11,7 +11,12 @@ import {
   faEnvelope,
   faFileDownload,
 } from "@fortawesome/free-solid-svg-icons";
-import cinemaimg from "../assets/images/cinema.png";
+
+import ReactJS from "../assets/icons/frameworks/react.svg";
+import NodeJS from "../assets/icons/frameworks/node.svg";
+import MongoDB from "../assets/icons/database/mongodb.svg";
+import Express from "../assets/icons/frameworks/express_white.svg";
+import TypeScript from "../assets/icons/frameworks/typescript.svg";
 
 const Main = () => {
   const news = [
@@ -27,15 +32,26 @@ const Main = () => {
     "Save the planet that only one with beer",
   ];
 
-  const resumelink =
-    "https://drive.google.com/file/d/1wFH3qRg_NEeyZXCAOPu98ZaO8MOWQx-4/view?usp=sharing";
+  const [popupVisible, setPopupVisible] = useState(false);
+  useEffect(() => {
+    if (popupVisible) {
+      const timer = setTimeout(() => {
+        setPopupVisible(false);
+      }, 2000);
 
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [popupVisible]);
   const handleEmailClick = () => {
     const email = "axel.valentinbvs@yahoo.com";
     navigator.clipboard.writeText(email);
-    alert("Adresse e-mail copiée !");
+    setPopupVisible(true);
   };
 
+  const resumelink =
+    "https://drive.google.com/file/d/1wFH3qRg_NEeyZXCAOPu98ZaO8MOWQx-4/view?usp=sharing";
   const handleResumeClick = () => {
     window.location.href = resumelink;
   };
@@ -135,6 +151,9 @@ const Main = () => {
             </div>
 
             <div className="about__spotify">
+              <div>
+                <p className="about__blurb">my favorite group</p>
+              </div>
               <iframe
                 title="spotify"
                 src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3RbzfW?utm_source=generator&theme=0"
@@ -164,40 +183,32 @@ const Main = () => {
         </div>
       </section>
 
+      <Ticker news={news} />
       <section id="projects" className="projects__section">
-        <div className="H__line"></div>
-        <div className="text__container">
-          <div className="projects__card__container ">
-            <div>
-              <Card
-                title="Obole"
-                description="Online bank M.E.R.N app"
-                imageSrc="https://github.com/Pixeloceax/Obole/raw/main/obole.png"
-              />
-              <Card
-                title="Auth Backend MongoDB"
-                description="Login, register, middleware"
-                imageSrc="https://github.com/Pixeloceax/auth-backend-mongo/raw/main/code.png"
-              />
-            </div>
-            <div>
-              <Card
-                title="Cinema Guru"
-                description="impl from scrath with movies API"
-                imageSrc={cinemaimg}
-              />
-              <Card title="" description="" imageSrc="" />
-            </div>
-          </div>
-          <div className="V__line"></div>
-          <h1 className="text__orientation">Projects</h1>
+        <div className="text__orientation">
+          <h1>Projects</h1>
+        </div>
+        <div className=" projects__container">
+          <Card
+            title="Obole"
+            description="Online Bank, M.E.R.N app"
+            skills={[MongoDB, Express, ReactJS, NodeJS, TypeScript]}
+          />
+          <Card
+            title="Obole"
+            description="Online Bank, M.E.R.N app"
+            skills={[MongoDB, Express, ReactJS, NodeJS]}
+          />
+          <Card
+            title="Obole"
+            description="Online Bank, M.E.R.N app"
+            skills={[MongoDB, Express, ReactJS, NodeJS]}
+          />
         </div>
       </section>
 
+      <Ticker news={news} />
       <section id="contact" className="contact__section">
-        <div className="contact__H__line"></div>
-        <div className="contact__V__line"></div>
-
         <div className="contact__inner">
           <div className="contact__content">
             <div className="contact__badge">
@@ -237,7 +248,7 @@ const Main = () => {
                   onClick={handleResumeClick}
                 >
                   <FontAwesomeIcon icon={faFileDownload} />
-                  <p>Get my resume Download my resume</p>
+                  <p>Get my resume, Download my resume</p>
                 </div>
               </div>
 
@@ -260,6 +271,14 @@ const Main = () => {
             </div>
           </div>
         </div>
+
+        {popupVisible && (
+          <div className="popup">
+            <div className="popup__content">
+              <p>Email address copied!</p>
+            </div>
+          </div>
+        )}
       </section>
     </>
   );

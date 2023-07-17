@@ -1,15 +1,16 @@
 import React from "react";
 
-const Card = ({ imageSrc, title, description }) => {
+const Card = ({ title, description, skills }) => {
   return (
     <div className="card__container">
-      <div className="card__image">
-        <img src={imageSrc} alt={title} className="card__image__size" />
-      </div>
-      <div className="card__line__separator"></div>
       <div className="card__text">
         <h1>{title}</h1>
         <p>{description}</p>
+      </div>
+      <div className="card__icons__skills">
+        {skills.map((icon, index) => (
+          <img className="card__icons" key={index} src={icon} alt="icon" />
+        ))}
       </div>
     </div>
   );
