@@ -21,6 +21,9 @@ import TypeScript from "../assets/icons/frameworks/typescript.svg";
 import SQL from "../assets/icons/database/mysql.svg";
 
 import axelValentin from "../assets/images/axelVALENTIN2.png";
+import Trex from "../assets/images/trex.jpg";
+import tia from "../assets/images/tia.jpg";
+import manga from "../assets/images/manga.jpg";
 
 const Main = () => {
   const news = [
@@ -94,22 +97,13 @@ const Main = () => {
           </div>
           <div className="main__img">
             <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Eiffel_Tower_Vertical.JPG"
-                alt=""
-              />
+              <img src={Trex} alt="trex" />
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWwlMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                alt=""
-              />
+              <img src={tia} alt="tia" />
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-                alt=""
-              />
+              <img src={manga} alt="manga" />
             </div>
           </div>
         </div>

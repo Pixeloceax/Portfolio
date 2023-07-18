@@ -83,6 +83,7 @@
   height: 550px;
   width: 250px;
   border-radius: 120px 0px 120px 0px;
+  object-fit: cover;
 }
 
 .about__spotify {
