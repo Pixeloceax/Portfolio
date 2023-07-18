@@ -51,22 +51,6 @@
   margin-right: 10px;
 }
 
-.contact__V__line {
-  z-index: 99999;
-  border-right: 1px solid #fff;
-  height: 9.5vh;
-  margin-right: 50%;
-  position: relative;
-}
-
-.contact__H__line {
-  z-index: 1;
-  position: relative;
-  border-top: 1px solid #fff;
-  width: 52.9rem;
-  margin-left: 50%;
-}
-
 .contact__informations {
   display: flex;
   justify-content: center;

@@ -44,7 +44,7 @@ const Main = () => {
     if (popupVisible) {
       const timer = setTimeout(() => {
         setPopupVisible(false);
-      }, 2000);
+      }, 200000);
 
       return () => {
         clearTimeout(timer);
