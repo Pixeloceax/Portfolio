@@ -66,6 +66,11 @@
   outline: none;
 }
 
+.main__text__container button:hover a,
+.main__text__container button:focus a {
+  color: #000;
+}
+
 .main__img {
   display: flex;
   height: 100%;

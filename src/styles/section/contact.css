@@ -68,6 +68,10 @@
   width: 50%;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .contact__informations__item p {
   margin: 0;
   margin-top: 10px;

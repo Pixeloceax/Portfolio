@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./styles/index.css";
-import "./styles/main.css";
-import "./styles/ticker.css";
-import "./styles/circletext.css";
-import "./styles/card.css";
-import "./styles/about.css";
-import "./styles/project.css";
-import "./styles/contact.css";
-import "./styles/navbar.css";
-import "./styles/footer.css";
+import "./styles/index.min.css";
+import "./styles/section/main.min.css";
+import "./styles/components/ticker.min.css";
+import "./styles/components/circletext.min.css";
+import "./styles/components/card.min.css";
+import "./styles/section/about.min.css";
+import "./styles/section/project.min.css";
+import "./styles/section/contact.min.css";
+import "./styles/components/navbar.min.css";
+import "./styles/section/footer.min.css";
 
 import App from "./App";
 
