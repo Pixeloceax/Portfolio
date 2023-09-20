@@ -6,7 +6,7 @@ import manga from "../../assets/images/manga.jpg";
 
 const Hero = () => {
   const resumelink =
-    "https://drive.google.com/file/d/1wFH3qRg_NEeyZXCAOPu98ZaO8MOWQx-4/view?usp=sharing";
+    "https://drive.google.com/file/d/1cnGW9I8dxUnbctLszDm282RXPRVAS4XG/view?usp=sharing";
   return (
     <>
       <div className="main__container">
