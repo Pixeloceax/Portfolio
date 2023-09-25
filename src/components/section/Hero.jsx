@@ -5,8 +5,6 @@ import tia from "../../assets/images/tia.jpg";
 import manga from "../../assets/images/manga.jpg";
 
 const Hero = () => {
-  const resumelink =
-    "https://drive.google.com/file/d/1xCSdtKZcw338SIXVcEkv00SFeNGHJW2x/view?usp=sharing";
   return (
     <>
       <div className="main__container">
@@ -21,7 +19,11 @@ const Hero = () => {
             <p>Student at Holberton School</p>
             <div className="main__button">
               <button>
-                <a href={resumelink} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={process.env.REACT_APP_RESUME_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {" "}
                   Get my CV
                 </a>

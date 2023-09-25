@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import linkedin from "../../assets/icons/others/linkedin-icon.svg";
 import github from "../../assets/icons/tools/github-icon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,19 +22,14 @@ const Contact = () => {
     }
   }, [popupVisible]);
   const handleEmailClick = () => {
-    const email = "axel.valentinbvs@yahoo.com";
-    navigator.clipboard.writeText(email);
+    navigator.clipboard.writeText(process.env.REACT_APP_E_MAIL);
     setPopupVisible(true);
   };
 
-  const resumelink =
-    "https://drive.google.com/file/d/1xCSdtKZcw338SIXVcEkv00SFeNGHJW2x/view?usp=sharing";
-
   const handleResumeClick = () => {
     const link = document.createElement("a");
-    link.href = resumelink;
+    link.href = process.env.REACT_APP_RESUME_LINK;
     link.target = "_blank";
-    link.download = "your_resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
