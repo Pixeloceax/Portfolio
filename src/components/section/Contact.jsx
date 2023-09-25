@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   const resumelink =
-    "https://drive.google.com/file/d/1wFH3qRg_NEeyZXCAOPu98ZaO8MOWQx-4/view?usp=sharing";
+    "https://drive.google.com/file/d/1xCSdtKZcw338SIXVcEkv00SFeNGHJW2x/view?usp=sharing";
 
   const handleResumeClick = () => {
     const link = document.createElement("a");
