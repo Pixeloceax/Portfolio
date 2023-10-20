@@ -22,7 +22,7 @@ Check out the live demo of the website at [axelvalentin.com](axelvalentin.com).
 For any inquiries or collaboration opportunities, feel free to reach out to me at:
 
 - Email: axel.valentinbvs@yahoo.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/axelvalentin/)
+- LinkedIn: [Axel VALENTIN](https://www.linkedin.com/in/axelvalentin/)
 
 ---
 
