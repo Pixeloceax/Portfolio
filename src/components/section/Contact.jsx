@@ -83,14 +83,14 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={linkedin} alt="linkedin" width="30" height="30" />
+                <img src={linkedin} alt="linkedin" width={30} height={30} />
               </a>
               <a
                 href="https://github.com/Pixeloceax"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={github} alt="github" width="30" height="30" />
+                <img src={github} alt="github" width={30} height={30} />
               </a>
             </div>
           </div>
