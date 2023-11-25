@@ -48,7 +48,7 @@ const Contact = () => {
           </div>
           <div className="contact__text">
             <p className="blurb">
-              I'm currently looking for a job as a Full Stack engineer.
+              I'm currently looking for an internship in France.
             </p>
           </div>
           <div className="contact__text">
