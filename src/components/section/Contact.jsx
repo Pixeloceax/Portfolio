@@ -40,7 +40,7 @@ const Contact = () => {
         <div className="contact__content">
           <div className="contact__badge">
             <div className="badge__container">
-              <div className="badge__name">Contact Me</div>
+              <h2>CONTACT ME</h2>
             </div>
             <div className="contact__badge-bottom ">
               <span className="blurb">Let's get in touch</span>

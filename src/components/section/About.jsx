@@ -23,7 +23,7 @@ const About = () => {
         </div>
 
         <div className="about__me__text__container">
-          <h2>About me</h2>
+          <h2>ABOUT ME</h2>
 
           <div className="about__text">
             <p className="blurb">

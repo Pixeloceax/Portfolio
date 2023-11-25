@@ -1,50 +1,51 @@
 import React from "react";
 
-import Card from "../Card";
-
-import ReactJS from "../../assets/icons/frameworks/react.svg";
-import NodeJS from "../../assets/icons/frameworks/node.svg";
-import MongoDB from "../../assets/icons/database/mongodb.svg";
-import Express from "../../assets/icons/frameworks/express_white.svg";
-import TypeScript from "../../assets/icons/frameworks/typescript.svg";
-import SQL from "../../assets/icons/database/mysql.svg";
-import Sequalize from "../../assets/icons/frameworks/Sequelize.svg";
+const img = "https://picsum.photos/250/150";
+const projectsData = [
+  {
+    name: "Obole",
+    link: "https://github.com/Pixeloceax/Obole",
+    img: "https://github.com/Pixeloceax/Obole/raw/main/obole.png",
+  },
+  {
+    name: "Auth Backend Mongo DB",
+    link: "https://github.com/Pixeloceax/auth-backend-mongo",
+    img: "https://raw.githubusercontent.com/Pixeloceax/auth-backend-mongo/main/code.png",
+  },
+  {
+    name: "Node SQL Inventory Management",
+    link: "https://github.com/Pixeloceax/NodeSQL-InventoryManagement",
+    img: "https://www.spherewms.com/hubfs/blog-files/SPH%20Whse%20Inv%20Mgmt%20Blog-shutterstock_1930996376.jpg",
+  },
+];
 
 const Projects = () => {
   return (
     <>
-      <div className="badge__container">
-        <div className="badge__name">My Projects</div>
-      </div>
       <div className="projects__container">
-        <div className="projects__container__card">
-          <Card
-            title="Obole"
-            description="Obole is an online banking application built using the M.E.R.N"
-            skills={[MongoDB, Express, ReactJS, NodeJS, TypeScript]}
-            githubLink="https://github.com/Pixeloceax/Obole"
-          />
-          <Card
-            title="Auth Backend MongoDB"
-            description=" Authentication backend, login, register, middleware"
-            skills={[MongoDB, Express, NodeJS]}
-            githubLink="https://github.com/Pixeloceax/auth-backend-mongo"
-          />
-          <Card
-            title="Cinema Guru"
-            description="Cinema Guru is web app that allows you to search for movies"
-            skills={[Express, ReactJS, NodeJS, SQL]}
-            githubLink="https://github.com/Pixeloceax/Obole"
-          />
-          <Card
-            title="NodeSQL InventoryManagement"
-            description="Inventory management with NodeJS and SQL"
-            skills={[Express, NodeJS, Sequalize, SQL]}
-            githubLink="https://github.com/Pixeloceax/NodeSQL-InventoryManagement"
-          />
+        <div className="header">
+          <h2>PROJECTS</h2>
         </div>
-
-        <div className="projects__container__2"></div>
+        {projectsData.map((project, index) => (
+          <div className="project__item" key={index}>
+            <hr className="line" />
+            <a
+              href={project.link}
+              target="
+            _blank"
+              rel="noreferrer"
+              className="project__link"
+            >
+              <h4 className="project__name">{project.name}</h4>
+              <img
+                src={project.img || img}
+                alt="projects__images"
+                className="project__image"
+              />
+            </a>
+          </div>
+        ))}
+        <hr className="line" />
       </div>
     </>
   );
