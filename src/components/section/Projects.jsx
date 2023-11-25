@@ -1,21 +1,24 @@
 import React from "react";
 
-const img = "https://picsum.photos/250/150";
+import obole__img from "../../assets/images/obole.png";
+import auth__img from "../../assets/images/code.png";
+import node__img from "../../assets/images/node_inv.png";
+
 const projectsData = [
   {
     name: "Obole",
     link: "https://github.com/Pixeloceax/Obole",
-    img: "https://github.com/Pixeloceax/Obole/raw/main/obole.png",
+    img: obole__img,
   },
   {
     name: "Auth Backend Mongo DB",
     link: "https://github.com/Pixeloceax/auth-backend-mongo",
-    img: "https://raw.githubusercontent.com/Pixeloceax/auth-backend-mongo/main/code.png",
+    img: auth__img,
   },
   {
     name: "Node SQL Inventory Management",
     link: "https://github.com/Pixeloceax/NodeSQL-InventoryManagement",
-    img: "https://www.spherewms.com/hubfs/blog-files/SPH%20Whse%20Inv%20Mgmt%20Blog-shutterstock_1930996376.jpg",
+    img: node__img,
   },
 ];
 
@@ -38,7 +41,7 @@ const Projects = () => {
             >
               <h4 className="project__name">{project.name}</h4>
               <img
-                src={project.img || img}
+                src={project.img}
                 alt="projects__images"
                 className="project__image"
               />
