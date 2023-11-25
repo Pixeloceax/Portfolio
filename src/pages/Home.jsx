@@ -12,14 +12,18 @@ const Main = () => {
   const news = [
     "Axel Valentin",
     "Software Engineer",
-    "Holberton School Student",
+    "Holberton School Graduate",
     "Cat lover",
     "Competitive video game player",
     "Manga reader",
-    "Fanatic of ReactJS",
+    "Back-end Lover",
     "Full Stack Web Developer",
     "Hate morning and morning people",
     "Save the planet that only one with beer",
+    "Night owl and coding aficionado",
+    "On a mission to create a better digital future",
+    "AI enthusiast",
+    "Dedicated to building sustainable software solutions",
   ];
 
   return (
