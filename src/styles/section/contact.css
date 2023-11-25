@@ -1,6 +1,5 @@
 /* Styles for the contact section */
 .contact__section {
-  background-color: #000000;
   color: #ffffff;
   padding: 0px 50px 50px 50px;
 }
@@ -81,7 +80,6 @@
   position: absolute;
   right: 0px;
   transform: translateY(-500%);
-  background-color: #000000;
   border: 1px solid #ffffff;
   padding: 20px;
   z-index: 9999;
