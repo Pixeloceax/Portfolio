@@ -41,7 +41,7 @@ const About = () => {
 
           <div className="about__text">
             <p className="blurb">
-              My hobbies are video Cats, read CyberPunk books and play FPS video
+              My hobbies are Cats, read CyberPunk books and play FPS video
               games.
             </p>
           </div>
